@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fluxo.2", "fluxo.2.csproj", "{B18325A4-6E8B-4485-9950-23026C526441}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B18325A4-6E8B-4485-9950-23026C526441}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B18325A4-6E8B-4485-9950-23026C526441}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B18325A4-6E8B-4485-9950-23026C526441}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B18325A4-6E8B-4485-9950-23026C526441}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0986E59F-9404-4BC3-AE9A-75E1098CA7FE}
+	EndGlobalSection
+EndGlobal
