@@ -1,10 +1,9 @@
 using System;
 using Microsoft.Maui.Controls;
-
-namespace fluxo.2;
-    public partial class MainPage : ContentPage
-    {
-        public MainPage()
+namespace fluxo._2;
+    public partial class BuscaDeCliente : ContentPage
+   { 
+        public BuscaDeCliente()
         {
             InitializeComponent();
         }

@@ -32826,11 +32826,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\fluxo.2\\fluxo.2.csproj",
+      "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\fluxo.2-1\\fluxo.2.csproj",
       "projectName": "fluxo.2",
-      "projectPath": "C:\\Users\\Aluno\\Desktop\\fluxo.2\\fluxo.2.csproj",
+      "projectPath": "C:\\Users\\Aluno\\Desktop\\fluxo.2-1\\fluxo.2.csproj",
       "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aluno\\Desktop\\fluxo.2\\obj\\",
+      "outputPath": "C:\\Users\\Aluno\\Desktop\\fluxo.2-1\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "configFilePaths": [
