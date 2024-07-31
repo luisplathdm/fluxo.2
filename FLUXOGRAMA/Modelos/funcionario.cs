@@ -14,8 +14,4 @@ public class Funcionario
  {
   return id;
  }
- public void GetiD (int id)
- {
-
- }
 }

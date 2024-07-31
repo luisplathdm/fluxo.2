@@ -8,7 +8,7 @@
             Placeholder="BUSCAR CLIENTE" />
             
             <ImageButton 
-            Source="search_icon.png" 
+            Source="" 
             Clicked="OnSearchClicked" />
             
         <Grid>

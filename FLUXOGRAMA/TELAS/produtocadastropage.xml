@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="fluxo._2.ProdutoCadastroPage">
+
+    <StackLayout Padding="10">
+        <Label Text="cadastro de produto" FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" />
+
+        <Grid ColumnSpacing="10" RowSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="nome" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" />
+            <Entry x:Name="nomeEntry" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3"/>
+
+            <Label Text="DN" Grid.Row="1" Grid.Column="2" VerticalOptions="Center" />
+            <Entry x:Name="dnEntry" Grid.Row="1" Grid.Column="3" />
+
+            <Label Text="materia prima" Grid.Row="2" Grid.Column="0" VerticalOptions="Center" />
+            <Entry x:Name="materiaPrimaEntry" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3"/>
+
+            <Label Text="fornecedor" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" />
+            <Entry x:Name="fornecedorEntry" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3"/>
+
+            <Label Text="unidade" Grid.Row="4" Grid.Column="0" VerticalOptions="Center" />
+            <Entry x:Name="unidadeEntry" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3"/>
+
+            <Label Text="id" Grid.Row="5" Grid.Column="0" VerticalOptions="Center" />
+            <Entry x:Name="idEntry" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3"/>
+        </Grid>
+
+        <Button Text="SALVAR" FontAttributes="Bold" Clicked="OnSalvarClicked" HorizontalOptions="Fill" />
+        <Button Text="VOLTAR" Clicked="OnVoltarClicked" HorizontalOptions="Fill" />
+    </StackLayout>
+</ContentPage>

@@ -15,7 +15,7 @@ namespace Modelos;
 
  public void SetID (int NumeroDeIndentificacao)
  {
-  id = NumeroDeIndentificacao;
+  id = id;
  }
  
  public void GetID()
