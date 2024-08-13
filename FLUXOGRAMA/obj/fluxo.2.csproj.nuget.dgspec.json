@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aluno\\fluxo.2\\FLUXOGRAMA\\fluxo.2.csproj": {}
+    "C:\\Users\\Aluno\\Desktop\\fluxo.2\\FLUXOGRAMA\\fluxo.2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aluno\\fluxo.2\\FLUXOGRAMA\\fluxo.2.csproj": {
+    "C:\\Users\\Aluno\\Desktop\\fluxo.2\\FLUXOGRAMA\\fluxo.2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aluno\\fluxo.2\\FLUXOGRAMA\\fluxo.2.csproj",
+        "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\fluxo.2\\FLUXOGRAMA\\fluxo.2.csproj",
         "projectName": "fluxo.2",
-        "projectPath": "C:\\Users\\Aluno\\fluxo.2\\FLUXOGRAMA\\fluxo.2.csproj",
+        "projectPath": "C:\\Users\\Aluno\\Desktop\\fluxo.2\\FLUXOGRAMA\\fluxo.2.csproj",
         "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aluno\\fluxo.2\\FLUXOGRAMA\\obj\\",
+        "outputPath": "C:\\Users\\Aluno\\Desktop\\fluxo.2\\FLUXOGRAMA\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
@@ -60,6 +60,10 @@
         "net8.0-android34.0": {
           "targetAlias": "net8.0-android",
           "dependencies": {
+            "LiteDB": {
+              "target": "Package",
+              "version": "[5.0.21, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.0-rc.1.23419.4, )"
@@ -103,6 +107,10 @@
         "net8.0-ios17.2": {
           "targetAlias": "net8.0-ios",
           "dependencies": {
+            "LiteDB": {
+              "target": "Package",
+              "version": "[5.0.21, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.0-rc.1.23419.4, )"
@@ -146,6 +154,10 @@
         "net8.0-maccatalyst17.2": {
           "targetAlias": "net8.0-maccatalyst",
           "dependencies": {
+            "LiteDB": {
+              "target": "Package",
+              "version": "[5.0.21, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.0-rc.1.23419.4, )"
@@ -190,6 +202,10 @@
         "net8.0-windows10.0.19041": {
           "targetAlias": "net8.0-windows10.0.19041.0",
           "dependencies": {
+            "LiteDB": {
+              "target": "Package",
+              "version": "[5.0.21, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.0-rc.1.23419.4, )"

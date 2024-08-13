@@ -1,17 +1,12 @@
 using System.Data;
+using Controles;
+using LiteDB;
 namespace Modelos;
 
    //CLASSE FILHO//
-  public class Cliente  
+  public class Cliente: Registro
     {
-      string cpf;
-
-      public void SetCpf (string quandopedircpf) 
-       {
-        cpf = quandopedircpf;
-       }
-       public string GetCpf()
-       {
-        return cpf;
-       }
+        [BsonId]
+      public int IdCliente { get; set; }
+      public string cpf  { get; set; }
     }
