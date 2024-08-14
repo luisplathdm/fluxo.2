@@ -9,7 +9,6 @@ namespace fluxo._2
         {
             InitializeComponent();
         }
-
         private void OnSearchClicked(object sender, EventArgs e)
         {
             // Adicione a lógica de busca aqui

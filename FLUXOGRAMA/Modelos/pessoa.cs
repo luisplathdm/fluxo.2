@@ -8,10 +8,10 @@ namespace Modelos;
 {
     [BsonId]
  public int IdPessoa{ get; set; }
- public string nome{ get; set; }
- public string telefone{ get; set; }
- public string cidade{ get; set; }
- public string municipio{ get; set; }
- public string uf{ get; set; }
- public DateTime dn{ get; set; }
+ public string Nome{ get; set; }
+ public string Telefone{ get; set; }
+ public string Cidade{ get; set; }
+ public string Municipio{ get; set; }
+ public string Uf{ get; set; }
+ public DateTime Dn{ get; set; }
 }

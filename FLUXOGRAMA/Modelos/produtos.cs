@@ -1,5 +1,11 @@
+using LiteDB;
+
 namespace Modelos;
 public class Produto
 {
-    string cnpj;
+     [BsonId]
+
+    public int IdProduto{ get; set; }
+    public string cnpj{ get; set; }
+
 }

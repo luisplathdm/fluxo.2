@@ -51,8 +51,8 @@
             Grid.Column="2" 
             VerticalOptions="Center" />
                  <Entry x:Name="telefoneEntry"
-                  Grid.Row="1" G
-                  rid.Column="3" />
+                  Grid.Row="1" 
+                  Grid.Column="3" />
 
             <Label Text="endereco"
              Grid.Row="2" 

@@ -5,8 +5,12 @@
 
     <StackLayout Padding="10">
         <StackLayout Orientation="Horizontal">
-            <Entry x:Name="searchEntry" Placeholder="BUSCAR produto" HorizontalOptions="FillAndExpand" />
-            <ImageButton Source="search_icon.png" Clicked="OnSearchClicked" />
+            <Entry x:Name="searchEntry" 
+            Placeholder="BUSCAR produto" 
+            HorizontalOptions="FillAndExpand" />
+            
+            <ImageButton Source="search_icon.png" 
+            Clicked="OnSearchClicked" />
         </StackLayout>
         
         <Grid ColumnSpacing="10" RowSpacing="10" Margin="0,10,0,10">
@@ -22,15 +26,31 @@
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
 
-            <Label Text="NOME" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" />
-            <Label Text="unidade" Grid.Row="0" Grid.Column="1" VerticalOptions="Center" />
-            <Label Text="id" Grid.Row="0" Grid.Column="2" VerticalOptions="Center" />
+            <Label Text="NOME" 
+            Grid.Row="0"
+             Grid.Column="0" 
+             VerticalOptions="Center" />
             
-            <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3">
+            <Label Text="unidade" 
+            Grid.Row="0" 
+            Grid.Column="1" 
+            VerticalOptions="Center" />
+            
+            <Label Text="id" 
+            Grid.Row="0" 
+            Grid.Column="2" 
+            VerticalOptions="Center" />
+            
+            <Grid Grid.Row="1" 
+            Grid.Column="0" 
+            Grid.ColumnSpan="3">
                 <!-- Repeat for each product -->
-                <Label Text="Produto Nome" Grid.Column="0" />
-                <Label Text="Produto Unidade" Grid.Column="1" />
-                <Label Text="Produto ID" Grid.Column="2" />
+                <Label Text="Produto Nome" 
+                Grid.Column="0" />
+                <Label Text="Produto Unidade" 
+                Grid.Column="1" />
+                <Label Text="Produto ID"
+                 Grid.Column="2" />
             </Grid>
             
             <StackLayout Grid.Row="1" Grid.Column="3" VerticalOptions="Center">
@@ -40,7 +60,12 @@
             </StackLayout>
         </Grid>
 
-        <Button Text="adicionar" FontAttributes="Bold" Clicked="OnAdicionarClicked" HorizontalOptions="Fill" />
-        <Button Text="VOLTAR" Clicked="OnVoltarClicked" HorizontalOptions="Fill" />
+        <Button Text="adicionar" 
+        FontAttributes="Bold" 
+        Clicked="OnAdicionarClicked" 
+        HorizontalOptions="Fill" />
+        <Button Text="VOLTAR" 
+        Clicked="OnVoltarClicked" 
+        HorizontalOptions="Fill" />
     </StackLayout>
 </ContentPage>

@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="fluxo._2.MainPage">
+             x:Class="fluxo._2.BuscaDeClientePage">
 
     <StackLayout Padding="10">
-            <Entry x:Name="searchEntry" 
-            Placeholder="BUSCAR CLIENTE" />
+            <Entry x:Name="PesquisarEntry" />
             
-            <ImageButton 
-            Source="" 
+            <ImageButton
             Clicked="OnSearchClicked" />
             
         <Grid>
@@ -29,7 +27,7 @@
                 </Grid.ColumnDefinitions>
                 <Label Text="NOME" Grid.Column="0" />
                 <Label Text="END" Grid.Column="1" />
-                <Label Text="CPF\nCNPJ" Grid.Column="2" />
+                <Label Text="CPF\CNPJ" Grid.Column="2" />
             </Grid>
 
             <StackLayout 
@@ -50,17 +48,17 @@
             </StackLayout>
 
             <StackLayout Grid.Row="1" Grid.Column="1">
-                <Button Text="+" Clicked="OnAddClientClicked" />
-                <Button Text="+" Clicked="OnAddClientClicked" />
-                <Button Text="+" Clicked="OnAddClientClicked" />
+                <Button Text="+" Clicked="Atualizaçaocliente" />
+                <Button Text="+" Clicked="Atualizaçaocliente" />
+                <Button Text="+" Clicked="Atualizaçaocliente" />
             </StackLayout>
         </Grid>
 
         <Button 
-            Text="adicionar" 
-            Clicked="OnAdicionarClicked" />
+            Text="Adicionar" 
+            Clicked="AdicionarClicked" />
         <Button
             Text="VOLTAR" 
-            licked="OnVoltarClicked" />
+            Clicked="OnVoltarClicked" />
     </StackLayout>
 </ContentPage>

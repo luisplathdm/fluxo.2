@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("fluxo.2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+8a8573fa0893ed55b53bb7f8cbdee78739677822")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+118eb5de0925f58fb0267c42fa1c648b309d5187")]
 [assembly: System.Reflection.AssemblyProductAttribute("fluxo.2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("fluxo.2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

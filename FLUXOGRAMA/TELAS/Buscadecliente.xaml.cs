@@ -18,7 +18,7 @@ namespace fluxo._2;
             // Add logic to add a new client entry
         }
 
-        private void OnAdicionarClicked(object sender, EventArgs e)
+        private void AdicionarClicked(object sender, EventArgs e)
         {
             // Add logic to handle "adicionar" button click
         }
