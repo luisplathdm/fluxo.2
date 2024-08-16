@@ -18,7 +18,7 @@ public class ClienteControle : BaseControle
   public virtual Registro? Ler(int idCliente)
   {
     var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
-    return collection.FindOne(d => d.Id == idCliente);
+    return collection.FindOne(d => d.IdCliente == idCliente);
   }
 
   //----------------------------------------------------------------------------
@@ -26,7 +26,7 @@ public class ClienteControle : BaseControle
   public virtual List<Cliente>? LerTodos()
   {
     var tabela = liteDB.GetCollection<Cliente>(NomeDaTabela);
-    return new List<Cliente>(tabela.FindAll().OrderBy(d => d.Sobrenome));
+    return new List<Cliente>(tabela.FindAll().OrderBy(d => d.cpf));
   }
 
   //----------------------------------------------------------------------------
