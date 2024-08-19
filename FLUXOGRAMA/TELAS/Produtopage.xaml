@@ -9,7 +9,9 @@
             Placeholder="BUSCAR produto" 
             HorizontalOptions="FillAndExpand" />
             
-            <ImageButton Source="search_icon.png" 
+            <ImageButton 
+            Margin="10, 10, 10, 10"
+            Source="search_icon.png" 
             Clicked="OnSearchClicked" />
         </StackLayout>
         
@@ -25,21 +27,10 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
-
-            <Label Text="NOME" 
-            Grid.Row="0"
-             Grid.Column="0" 
-             VerticalOptions="Center" />
             
-            <Label Text="unidade" 
-            Grid.Row="0" 
-            Grid.Column="1" 
-            VerticalOptions="Center" />
+           
             
-            <Label Text="id" 
-            Grid.Row="0" 
-            Grid.Column="2" 
-            VerticalOptions="Center" />
+          
             
             <Grid Grid.Row="1" 
             Grid.Column="0" 
@@ -54,18 +45,25 @@
             </Grid>
             
             <StackLayout Grid.Row="1" Grid.Column="3" VerticalOptions="Center">
-                <Button Text="+" Clicked="OnAddProductClicked" />
-                <Button Text="+" Clicked="OnAddProductClicked" />
-                <Button Text="+" Clicked="OnAddProductClicked" />
+                <Button Text="+" Clicked="OnAddProductClicked" 
+                Margin="10, 10, 10, 10"/>
+                <Button Text="+" Clicked="OnAddProductClicked"
+                Margin="10, 10, 10, 10"/>
+                <Button Text="+" Clicked="OnAddProductClicked" 
+                Margin="10, 10, 10, 10"/>
             </StackLayout>
         </Grid>
 
         <Button Text="adicionar" 
         FontAttributes="Bold" 
         Clicked="OnAdicionarClicked" 
-        HorizontalOptions="Fill" />
+        HorizontalOptions="Fill"
+        Margin="10, 10, 10, 10" />
+        
         <Button Text="VOLTAR" 
+        Margin="10, 10, 10, 10"
         Clicked="OnVoltarClicked" 
         HorizontalOptions="Fill" />
+    
     </StackLayout>
 </ContentPage>

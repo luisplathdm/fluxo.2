@@ -47,7 +47,8 @@
             </StackLayout>
 
             <StackLayout Grid.Row="1" Grid.Column="1">
-                <Button Text="+" Clicked="Atualizacaocliente" />
+                <Button Text="+" Clicked="Atualizacaocliente" 
+                Background="Aquamarine"/>
                 <Button Text="+" Clicked="Atualizacaocliente" />
                 <Button Text="+" Clicked="Atualizacaocliente" />
             </StackLayout>

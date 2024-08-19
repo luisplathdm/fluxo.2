@@ -26,7 +26,7 @@ namespace fluxo._2
 
         private void OnVoltarClicked(object sender, EventArgs e)
         {
-            // Adicione a lógica para o botão "VOLTAR"
+            Application.Current.MainPage= new MainPage();
         }
     }
 }

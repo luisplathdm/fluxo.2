@@ -1,6 +1,4 @@
-using System;
-using Microsoft.Maui.Controls;
-using static System.Net.Mime.MediaTypeNames;
+
 namespace fluxo._2;
     public partial class BuscaDeCliente : ContentPage
    { 
@@ -26,6 +24,6 @@ namespace fluxo._2;
 
         private void OnVoltarClicked(object sender, EventArgs e)
         {
-            // Add logic to handle "VOLTAR" button click
+            Application.Current.MainPage= new MainPage();
         }
     }

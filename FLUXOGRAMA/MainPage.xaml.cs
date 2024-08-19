@@ -10,6 +10,22 @@ public partial class MainPage : ContentPage
         {
           Application.Current.MainPage = new BuscaDeCliente();        
 		}
+		 private void OnClienteClicked(object sender, EventArgs e)
+        {
+			Application.Current.MainPage = new CadastroPage();              }
+
+        private void OnProdutoClicked(object sender, EventArgs e)
+        {
+			Application.Current.MainPage = new ProdutoPage();              }
+
+        private void OnFornecedorClicked(object sender, EventArgs e)
+        {
+			Application.Current.MainPage = new BuscaDeCliente();              }
+
+        private void OnBuscaClicked(object sender, EventArgs e)
+        {
+			Application.Current.MainPage = new BuscaDeCliente();          
+	    }
 }
 
 

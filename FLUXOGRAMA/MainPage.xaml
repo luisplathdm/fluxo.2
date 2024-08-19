@@ -2,10 +2,33 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="fluxo._2.MainPage">
-  <Button Text="ENTRAR" 
-  Padding="100"
-  FontAttributes="Bold" 
-  BackgroundColor="black"
-  Clicked="comecando" 
-  HorizontalOptions="Fill" />
-</ContentPage>
+
+    <StackLayout          
+    Padding="10"
+     VerticalOptions="Center"
+     HorizontalOptions="Center">
+    
+        <Button Text="Cadastrar cliente"
+         Clicked="OnClienteClicked"
+         Background="Aquamarine"
+         Margin="10, 10, 10, 10"
+         Padding="10" />
+        
+          <Button Text="produto"
+          Clicked="OnProdutoClicked"
+          Background="Aquamarine"
+          Margin="10, 10, 10, 10"
+          Padding="10"/>
+        
+          <Button Text="fornecedor"
+          Background="Aquamarine"
+           Margin="10, 10, 10, 10"
+          Clicked="OnFornecedorClicked" />
+          
+        <Button Text="busca" 
+        Background="Aquamarine"
+        Margin="10, 10, 10, 10"
+        Clicked="OnBuscaClicked" />
+    
+    </StackLayout>
+ </ContentPage>
