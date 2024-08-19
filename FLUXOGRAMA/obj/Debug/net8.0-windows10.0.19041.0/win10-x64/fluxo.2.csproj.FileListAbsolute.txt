@@ -861,3 +861,5 @@ C:\Users\Aluno\fluxo.2\FLUXOGRAMA\obj\Debug\net8.0-windows10.0.19041.0\win10-x64
 C:\Users\Aluno\fluxo.2\FLUXOGRAMA\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt
 C:\Users\Aluno\fluxo.2\FLUXOGRAMA\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\Aluno\fluxo.2\FLUXOGRAMA\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Aluno\fluxo.2\FLUXOGRAMA\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\lupa.scale-100.png
+C:\Users\Aluno\fluxo.2\FLUXOGRAMA\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\lupa.scale-100.png

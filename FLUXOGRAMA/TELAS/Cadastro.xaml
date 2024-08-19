@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="fluxo._2.CadastroPage">
+             x:Class="fluxo._2.CadastroPage"
+              BackgroundColor="Gainsboro">
 
     <StackLayout Padding="10">
         
@@ -82,11 +83,13 @@
         Text="SALVAR" 
         Margin="10, 10, 10, 10"
         FontAttributes="Bold" 
+         Background="Orange"
         Clicked="OnSalvarClicked" />
                                         
         <Button 
         Text="VOLTAR" 
         Margin="10, 10, 10, 10"
+         Background="Orange"
         Clicked="OnVoltarClicked" />
     
     </StackLayout>

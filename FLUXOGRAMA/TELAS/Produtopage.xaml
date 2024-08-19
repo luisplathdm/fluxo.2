@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="fluxo._2.ProdutoPage">
+             x:Class="fluxo._2.ProdutoPage"
+             BackgroundColor="Gainsboro">
 
     <StackLayout Padding="10">
         <StackLayout Orientation="Horizontal">
+            
             <Entry x:Name="searchEntry" 
+            
             Placeholder="BUSCAR produto" 
             HorizontalOptions="FillAndExpand" />
             
             <ImageButton 
             Margin="10, 10, 10, 10"
             Source="search_icon.png" 
-            Clicked="OnSearchClicked" />
+            Clicked="OnSearchClicked" 
+            Background="Orange"
+/>
         </StackLayout>
         
         <Grid ColumnSpacing="10" RowSpacing="10" Margin="0,10,0,10">
@@ -36,21 +41,28 @@
             Grid.Column="0" 
             Grid.ColumnSpan="3">
                 <!-- Repeat for each product -->
-                <Label Text="Produto Nome" 
-                Grid.Column="0" />
-                <Label Text="Produto Unidade" 
-                Grid.Column="1" />
-                <Label Text="Produto ID"
-                 Grid.Column="2" />
+               
             </Grid>
             
-            <StackLayout Grid.Row="1" Grid.Column="3" VerticalOptions="Center">
-                <Button Text="+" Clicked="OnAddProductClicked" 
-                Margin="10, 10, 10, 10"/>
-                <Button Text="+" Clicked="OnAddProductClicked"
-                Margin="10, 10, 10, 10"/>
-                <Button Text="+" Clicked="OnAddProductClicked" 
-                Margin="10, 10, 10, 10"/>
+            <StackLayout 
+                Grid.Row="1"
+                Grid.Column="3" 
+                VerticalOptions="Center">
+                
+                <Button Text="+" 
+                    Clicked="OnAddProductClicked" 
+                    Margin="10, 10, 10, 10"
+                            Background="Orange"/>
+                
+                <Button Text="+" 
+                    Clicked="OnAddProductClicked"
+                    Margin="10, 10, 10, 10"
+                            Background="Orange"/>
+                
+                <Button Text="+"
+                    Clicked="OnAddProductClicked" 
+                    Margin="10, 10, 10, 10"
+                            Background="Orange"/>
             </StackLayout>
         </Grid>
 
@@ -58,11 +70,13 @@
         FontAttributes="Bold" 
         Clicked="OnAdicionarClicked" 
         HorizontalOptions="Fill"
+        Background="Orange"
         Margin="10, 10, 10, 10" />
         
         <Button Text="VOLTAR" 
         Margin="10, 10, 10, 10"
-        Clicked="OnVoltarClicked" 
+        Clicked="OnVoltarClicked"
+        Background="Orange" 
         HorizontalOptions="Fill" />
     
     </StackLayout>
