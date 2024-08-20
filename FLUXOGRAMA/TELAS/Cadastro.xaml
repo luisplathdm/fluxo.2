@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="fluxo._2.CadastroPage"
-              BackgroundColor="Gainsboro">
+              BackgroundColor="Gainsboro"
+              Shell.NavBarIsVisible="false">
 
     <StackLayout Padding="10">
         
@@ -18,65 +19,58 @@
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <Label Text="nome"
-             Grid.Row="0" 
-             Grid.Column="0" 
-             VerticalOptions="Center" />
+          
                 
                 <Entry x:Name="nomeEntry"
                  Grid.Row="0" 
-                 Grid.Column="1" />
+                 Margin="10, 10, 10, 10"
+                 Grid.Column="0" 
+                 Placeholder="Nome"
+                 Background="#bdb9b3"/>
 
-            <Label Text="DN"
-             Grid.Row="0" 
-             Grid.Column="2" 
-             VerticalOptions="Center" />
-                
-                <Entry x:Name="dnEntry"
-                 Grid.Row="0" 
-                 Grid.Column="3" />
+          
+                    <Entry x:Name="dnEntry"
+                    Placeholder="Data De Nascimento"
+                    Grid.Row="1" 
+                    Background="#bdb9b3"
+                     Margin="10, 10, 10, 10"
+                    Grid.Column="0" />
 
-            <Label Text="DDD" 
-            Grid.Row="1" 
-            Grid.Column="0" 
-            VerticalOptions="Center" />
-                
-                <Entry x:Name="dddEntry"
-                 Grid.Row="1" 
-                 Grid.Column="1" />
+                    <Entry x:Name="dddEntry"
+                    Grid.Row="2" 
+                    Placeholder="DDD"
+                    Background="#bdb9b3"
+                    Margin="10, 10, 10, 10"
+                    Grid.Column="0" />
 
-            <Label Text="telefone" 
-            Grid.Row="1" 
-            Grid.Column="2" 
-            VerticalOptions="Center" />
                  
-                 <Entry x:Name="telefoneEntry"
-                  Grid.Row="1" 
-                  Grid.Column="3" />
-
-            <Label Text="endereco"
-             Grid.Row="2" 
-             Grid.Column="0" 
-             VerticalOptions="Center" />
-                
-                 <Entry x:Name="enderecoEntry" 
-                 Grid.Row="2" Grid.ColumnSpan="3" 
-                 Grid.Column="1" />
-
-            <Label Text="CPF"
-             Grid.Row="3" 
-             Grid.Column="0" 
-             VerticalOptions="Center" />
+                    <Entry x:Name="telefoneEntry"
+                    Grid.Row="3" 
+                    Placeholder="Telefone"
+                    Background="#bdb9b3"
+                     Margin="10, 10, 10, 10"
+                    Grid.Column="0" />
+                           
+                    <Entry x:Name="enderecoEntry" 
+                    Grid.Row="4" 
+                    Placeholder="Endereço"
+                    Background="#bdb9b3"
+                    Margin="10, 10, 10, 10"
+                    Grid.Column="0" />         
                
-                <Entry x:Name="cpfEntry" 
-                Grid.Row="3" 
-                Grid.Column="1" />
+                    <Entry x:Name="cpfEntry" 
+                    Grid.Row="5" 
+                    Background="#bdb9b3"
+                    Grid.Column="0" 
+                    Margin="10, 10, 10, 10"
+                    Placeholder="CPf"/>
+                    
         </Grid>
 
         <Button 

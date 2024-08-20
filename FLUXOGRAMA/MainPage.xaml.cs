@@ -6,7 +6,7 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
 	}
- private void comecando(object sender, EventArgs e)
+         private void comecando(object sender, EventArgs e)
         {
           Application.Current.MainPage = new BuscaDeCliente();        
 		}

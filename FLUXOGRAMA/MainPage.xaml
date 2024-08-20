@@ -2,34 +2,35 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="fluxo._2.MainPage"
-              BackgroundColor="Gainsboro">
+              BackgroundColor="Gainsboro"
+               Shell.NavBarIsVisible="false">
 
     <StackLayout          
-    Padding="10"
-     VerticalOptions="Center"
-     HorizontalOptions="Center">
+      Padding="10"
+      VerticalOptions="Center"
+      HorizontalOptions="Center">
     
-        <Button Text="Cadastrar cliente"
-         Clicked="OnClienteClicked"
-         Background="Orange"
-         Margin="10, 10, 10, 10"
-         Padding="10" />
+          <Button Text="Cadastrar cliente"
+            Clicked="OnClienteClicked"
+            Background="Orange"
+            Margin="10, 10, 10, 10"
+            Padding="10" />
         
           <Button Text="produto"
-          Clicked="OnProdutoClicked"
-         Background="Orange"
-          Margin="10, 10, 10, 10"
-          Padding="10"/>
+            Clicked="OnProdutoClicked"
+            Background="Orange"
+            Margin="10, 10, 10, 10"
+            Padding="10"/>
         
           <Button Text="fornecedor"
-         Background="Orange"
-           Margin="10, 10, 10, 10"
-          Clicked="OnFornecedorClicked" />
-          
-        <Button Text="busca" 
-         Background="Orange"
-        Margin="10, 10, 10, 10"
-        Clicked="OnBuscaClicked" />
-    
+            Background="Orange"
+            Margin="10, 10, 10, 10"
+            Clicked="OnFornecedorClicked" />
+            
+          <Button Text="busca" 
+            Background="Orange"
+            Margin="10, 10, 10, 10"
+            Clicked="OnBuscaClicked" />
+        
     </StackLayout>
  </ContentPage>
