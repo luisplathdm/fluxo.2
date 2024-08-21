@@ -24,6 +24,6 @@ namespace fluxo._2;
 
         private void OnVoltarClicked(object sender, EventArgs e)
         {
-           // Application.Current.MainPage = new MainPage();
+            Application.Current.MainPage = new MainPage();
         }
     }

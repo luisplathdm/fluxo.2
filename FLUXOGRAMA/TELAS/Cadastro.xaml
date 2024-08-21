@@ -25,9 +25,10 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-          
+                <Label Text="ID:" />
+            <Label x:Name="IdLabel"/>
                 
-                <Entry x:Name="nomeEntry"
+                <Entry x:Name="NomeEntry"
                  Grid.Row="0" 
                  Margin="10, 10, 10, 10"
                  Grid.Column="0" 
@@ -35,37 +36,33 @@
                  Background="#bdb9b3"/>
 
           
-                    <Entry x:Name="dnEntry"
+                    <Entry x:Name="DnEntry"
                     Placeholder="Data De Nascimento"
                     Grid.Row="1" 
                     Background="#bdb9b3"
                      Margin="10, 10, 10, 10"
                     Grid.Column="0" />
 
-                    <Entry x:Name="dddEntry"
-                    Grid.Row="2" 
-                    Placeholder="DDD"
-                    Background="#bdb9b3"
-                    Margin="10, 10, 10, 10"
-                    Grid.Column="0" />
 
                  
-                    <Entry x:Name="telefoneEntry"
-                    Grid.Row="3" 
+                    <Entry x:Name="TelefoneEntry"
+                    Grid.Row="2" 
                     Placeholder="Telefone"
                     Background="#bdb9b3"
                      Margin="10, 10, 10, 10"
                     Grid.Column="0" />
                            
                     <Entry x:Name="enderecoEntry" 
-                    Grid.Row="4" 
+                    Grid.Row="3" 
                     Placeholder="Endereço"
                     Background="#bdb9b3"
                     Margin="10, 10, 10, 10"
                     Grid.Column="0" />         
-               
+                    
+                    <Entry x:Name="SobrenomeEntry" Placeholder="Sobrenome"/>
+
                     <Entry x:Name="cpfEntry" 
-                    Grid.Row="5" 
+                    Grid.Row="4" 
                     Background="#bdb9b3"
                     Grid.Column="0" 
                     Margin="10, 10, 10, 10"
