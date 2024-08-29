@@ -2,15 +2,26 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="fluxo._2.ListaClientePage"
-             BackgroundColor="LightBlue"
+             BackgroundColor="Gainsboro"
              Title="Cadastrar cliente">
-
+<ScrollView>
  <VerticalStackLayout>
+ 
   <Button Text="Criar Novo Cliente"
           BackgroundColor="Orange"
           FontSize="16"
+          Margin="10, 10, 10, 0"
           TextColor="Black"
           Clicked="NovoClienteClicked"/>
+
+ <Button Text="Voltar"
+          BackgroundColor="Orange"
+          Margin="10, 10, 10, 0"
+          FontSize="16"
+          TextColor="Black"
+          Clicked="VoltandoTudoAoInicio"/>
+    
+    
     <ListView x:Name="ListaClientes"
               HasUnevenRows="True"
               ItemSelected="QuandoSelecionarUmItemNaLista"
@@ -20,13 +31,18 @@
         <DataTemplate>
           <ViewCell>
             <VerticalStackLayout Padding="20"
-                                BackgroundColor="Pink">
+                                BackgroundColor="LightGray">
               <HorizontalStackLayout>
+                <Label Text="{Binding IdCliente}"
+                      FontSize="20"/>
+
                 <Label Text="{Binding Nome}"
                       FontSize="20"/>
-                <Label Text="{Binding Sobrenome}"
+
+                <Label Text="{Binding cpf}"
                       FontSize="20"
                       Margin="10,0,0,0"/>
+
               </HorizontalStackLayout>
               <Label Text="{Binding Telefone}"
                       FontSize="20"/>
@@ -36,4 +52,5 @@
       </ListView.ItemTemplate>
     </ListView>
   </VerticalStackLayout>
+  </ScrollView>
 </ContentPage>

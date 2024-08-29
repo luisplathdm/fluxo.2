@@ -8,7 +8,7 @@ public partial class ListaClientePage : ContentPage
   public ListaClientePage()
 	{
 		InitializeComponent();
-    ListaCliente.ItemsSource = clienteControle.LerTodos();
+       ListaClientes.ItemsSource = clienteControle.LerTodos();
 	}
 
   void QuandoSelecionarUmItemNaLista(object sender, SelectedItemChangedEventArgs e)
@@ -26,8 +26,10 @@ public partial class ListaClientePage : ContentPage
 
   void NovoClienteClicked(object sender, EventArgs e)
   {
-    // Quando a idéia é CRIAR um novo cliente, não é necessário setar o atributo "cliente" no CadastroClientePage,
-    // sendo assim, apenas criamos a nova página
     Application.Current.MainPage = new CadastroPage();
+  }
+  void VoltandoTudoAoInicio(object sender, EventArgs e)
+  {
+    Application.Current.MainPage = new MainPage();
   }
 }
