@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zLJCoZ48p04=",
+  "dgSpecHash": "1tV8YfxLHzM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aluno\\fluxo.2\\FLUXOGRAMA\\fluxo.2.csproj",
+  "projectFilePath": "C:\\Users\\Aluno\\Desktop\\fluxo.2\\FLUXOGRAMA\\fluxo.2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aluno\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\Aluno\\.nuget\\packages\\litedb\\5.0.21\\litedb.5.0.21.nupkg.sha512",

@@ -14,7 +14,8 @@
             
             <ImageButton 
             Margin="10, 10, 10, 10"
-            Source="search_icon.png" 
+            HeightRequest="50"
+            Source="lupa.png" 
             Clicked="OnSearchClicked" 
             Background="Orange"
 />

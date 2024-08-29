@@ -19,7 +19,7 @@ namespace fluxo._2;
 
         private void AdicionarClicked(object sender, EventArgs e)
         {
-	      //  Application.Current.BuscaDeCliente = new CadastroPage();
+	      Application.Current.MainPage = new CadastroPage();
         }
 
         private void OnVoltarClicked(object sender, EventArgs e)

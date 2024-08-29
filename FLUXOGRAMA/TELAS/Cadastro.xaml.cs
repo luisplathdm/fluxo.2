@@ -5,7 +5,7 @@ namespace fluxo._2
 {
     public partial class CadastroPage : ContentPage
     {
-        public Modelos.Cliente Cliente { get; set; }
+        public Modelos.Cliente cliente { get; set; }
         Controles.ClienteControle clienteControle = new Controles.ClienteControle();
 
         public CadastroPage()
@@ -23,8 +23,7 @@ namespace fluxo._2
                 else
                     cliente.IdCliente = 0;
 
-                cliente.Nome = NomeEntry.Text; // Propriedade Nome agora existe
-                cliente.Sobrenome = SobrenomeEntry.Text; // Propriedade Sobrenome agora existe
+                cliente.Nome = NomeEntry.Text; // Propriedade Nome agora existe     
                 cliente.Telefone = TelefoneEntry.Text; // Propriedade Telefone agora existe
 
                 clienteControle.CriarOuAtualizar(cliente);

@@ -8,59 +8,65 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = fluxo._2
-build_property.ProjectDir = C:\Users\Aluno\fluxo.2\FLUXOGRAMA\
+build_property.ProjectDir = C:\Users\Aluno\Desktop\fluxo.2\FLUXOGRAMA\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/Aluno/fluxo.2/FLUXOGRAMA/App.xaml]
+[C:/Users/Aluno/Desktop/fluxo.2/FLUXOGRAMA/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = fluxo._2.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/Aluno/fluxo.2/FLUXOGRAMA/AppShell.xaml]
+[C:/Users/Aluno/Desktop/fluxo.2/FLUXOGRAMA/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = fluxo._2.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/Aluno/fluxo.2/FLUXOGRAMA/MainPage.xaml]
+[C:/Users/Aluno/Desktop/fluxo.2/FLUXOGRAMA/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = fluxo._2.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/Aluno/fluxo.2/FLUXOGRAMA/Resources/Styles/Colors.xaml]
+[C:/Users/Aluno/Desktop/fluxo.2/FLUXOGRAMA/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = fluxo._2.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/Aluno/fluxo.2/FLUXOGRAMA/Resources/Styles/Styles.xaml]
+[C:/Users/Aluno/Desktop/fluxo.2/FLUXOGRAMA/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = fluxo._2.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Users/Aluno/fluxo.2/FLUXOGRAMA/TELAS/Buscadecliente.xaml]
+[C:/Users/Aluno/Desktop/fluxo.2/FLUXOGRAMA/TELAS/Buscadecliente.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = fluxo._2.TELAS.Buscadecliente.xaml
 build_metadata.AdditionalFiles.TargetPath = TELAS\Buscadecliente.xaml
 build_metadata.AdditionalFiles.RelativePath = TELAS\Buscadecliente.xaml
 
-[C:/Users/Aluno/fluxo.2/FLUXOGRAMA/TELAS/Cadastro.xaml]
+[C:/Users/Aluno/Desktop/fluxo.2/FLUXOGRAMA/TELAS/Cadastro.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = fluxo._2.TELAS.Cadastro.xaml
 build_metadata.AdditionalFiles.TargetPath = TELAS\Cadastro.xaml
 build_metadata.AdditionalFiles.RelativePath = TELAS\Cadastro.xaml
 
-[C:/Users/Aluno/fluxo.2/FLUXOGRAMA/TELAS/Produtocadastropage.xaml]
+[C:/Users/Aluno/Desktop/fluxo.2/FLUXOGRAMA/TELAS/ListaClientePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = fluxo._2.TELAS.ListaClientePage.xaml
+build_metadata.AdditionalFiles.TargetPath = TELAS\ListaClientePage.xaml
+build_metadata.AdditionalFiles.RelativePath = TELAS\ListaClientePage.xaml
+
+[C:/Users/Aluno/Desktop/fluxo.2/FLUXOGRAMA/TELAS/Produtocadastropage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = fluxo._2.TELAS.Produtocadastropage.xaml
 build_metadata.AdditionalFiles.TargetPath = TELAS\Produtocadastropage.xaml
 build_metadata.AdditionalFiles.RelativePath = TELAS\Produtocadastropage.xaml
 
-[C:/Users/Aluno/fluxo.2/FLUXOGRAMA/TELAS/Produtopage.xaml]
+[C:/Users/Aluno/Desktop/fluxo.2/FLUXOGRAMA/TELAS/Produtopage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = fluxo._2.TELAS.Produtopage.xaml
 build_metadata.AdditionalFiles.TargetPath = TELAS\Produtopage.xaml

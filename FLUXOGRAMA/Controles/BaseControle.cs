@@ -1,4 +1,5 @@
 using LiteDB;
+using Modelos;
 namespace Controles;
 
 public class BaseControle
@@ -27,8 +28,11 @@ public class BaseControle
   //----------------------------------------------------------------------------
 
   public virtual void Apagar(int id)
-  {
-  }
+{
+    var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
+    collection.Delete(id);
+}
+
   
   //----------------------------------------------------------------------------
 

@@ -33777,11 +33777,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aluno\\fluxo.2\\FLUXOGRAMA\\fluxo.2.csproj",
+      "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\fluxo.2\\FLUXOGRAMA\\fluxo.2.csproj",
       "projectName": "fluxo.2",
-      "projectPath": "C:\\Users\\Aluno\\fluxo.2\\FLUXOGRAMA\\fluxo.2.csproj",
+      "projectPath": "C:\\Users\\Aluno\\Desktop\\fluxo.2\\FLUXOGRAMA\\fluxo.2.csproj",
       "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aluno\\fluxo.2\\FLUXOGRAMA\\obj\\",
+      "outputPath": "C:\\Users\\Aluno\\Desktop\\fluxo.2\\FLUXOGRAMA\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "configFilePaths": [

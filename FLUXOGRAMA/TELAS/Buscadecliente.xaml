@@ -31,17 +31,6 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-               
-                <Label Text="NOME" 
-                
-                
-                Grid.Column="0" />
-              
-                <Label Text="END" 
-                Grid.Column="1" />
-           
-                <Label Text="CPF\CNPJ" 
-                Grid.Column="2" />
             </Grid>
 
             <StackLayout 
@@ -56,14 +45,6 @@
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
                    
-                    <Label Text="Client Name" 
-                    Grid.Column="0" />
-                   
-                    <Label Text="Client Address" 
-                    Grid.Column="1" />
-                    
-                    <Label Text="Client CPF/CNPJ" 
-                    Grid.Column="2" />
                 </Grid>
             </StackLayout>
         </Grid>
