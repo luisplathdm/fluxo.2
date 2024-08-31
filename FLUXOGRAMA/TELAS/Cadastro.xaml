@@ -4,7 +4,7 @@
              x:Class="fluxo._2.CadastroPage"
               BackgroundColor="Gainsboro"
               Shell.NavBarIsVisible="false">
-
+<ScrollView>
     <StackLayout Padding="10">
         
         <Label Text="cadastro" 
@@ -97,4 +97,5 @@
             Clicked="OnVoltarClicked" />
     
     </StackLayout>
+  </ScrollView>
 </ContentPage>

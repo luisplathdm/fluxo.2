@@ -23,6 +23,9 @@ namespace fluxo._2
                 // Preenche os campos com os dados do cliente existente
                 NomeEntry.Text = cliente.Nome;
                 TelefoneEntry.Text = cliente.Telefone;
+                EnderecoEntry.Text = cliente.Endereco;
+                cpfEntry.Text = cliente.cpf; 
+                
             }
         }
 
@@ -40,6 +43,8 @@ namespace fluxo._2
                 cliente.Endereco = EnderecoEntry.Text;
                 cliente.cpf = cpfEntry.Text; 
                 cliente.Telefone = TelefoneEntry.Text; 
+               cliente.DataDeNascimento = (DataDeNascimentoEntry.Text);
+
 
                 // Cria ou atualiza o cliente
                 clienteControle.CriarOuAtualizar(cliente);

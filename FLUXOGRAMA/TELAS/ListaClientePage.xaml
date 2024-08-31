@@ -4,53 +4,69 @@
              x:Class="fluxo._2.ListaClientePage"
              BackgroundColor="Gainsboro"
              Title="Cadastrar cliente">
-<ScrollView>
- <VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout>
  
-  <Button Text="Criar Novo Cliente"
-          BackgroundColor="Orange"
-          FontSize="16"
-          Margin="10, 10, 10, 0"
-          TextColor="Black"
-          Clicked="NovoClienteClicked"/>
+            <Button Text="Criar Novo Cliente"
+                    BackgroundColor="Orange"
+                    FontSize="16"
+                    Margin="10, 10, 10, 0"
+                    TextColor="Black"
+                    Clicked="NovoClienteClicked"/>
 
- <Button Text="Voltar"
-          BackgroundColor="Orange"
-          Margin="10, 10, 10, 0"
-          FontSize="16"
-          TextColor="Black"
-          Clicked="VoltandoTudoAoInicio"/>
+            <Button Text="Voltar"
+                    BackgroundColor="Orange"
+                    Margin="10, 10, 10, 0"
+                    FontSize="16"
+                    TextColor="Black"
+                    Clicked="VoltandoTudoAoInicio"/>
     
-    
-    <ListView x:Name="ListaClientes"
-              HasUnevenRows="True"
-              ItemSelected="QuandoSelecionarUmItemNaLista"
-              HorizontalOptions="Fill"
-              VerticalOptions="Fill">
-      <ListView.ItemTemplate>
-        <DataTemplate>
-          <ViewCell>
-            <VerticalStackLayout Padding="20"
-                                BackgroundColor="LightGray">
-              <HorizontalStackLayout>
-                <Label Text="{Binding IdCliente}"
-                      FontSize="20"/>
+            <ListView x:Name="ListaClientes"
+                      HasUnevenRows="True"
+                      ItemSelected="QuandoSelecionarUmItemNaLista"
+                      HorizontalOptions="Fill"
+                      VerticalOptions="Fill">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                          
+                            <Frame BorderColor="Gainsboro"
+                                   CornerRadius="5"
+                                   Padding="3"
+                                   Margin="10"
+                                   HasShadow="false">
+                                <VerticalStackLayout Padding="10"
+                                                     BackgroundColor="LightGray">
+                                  <Grid>
+                                  <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                        <Label Text="{Binding IdCliente}"
+                                               FontSize="20"
+                                               Grid.Column="0"/>
 
-                <Label Text="{Binding Nome}"
-                      FontSize="20"/>
+                                        <Label Text="{Binding Nome}"
+                                               FontSize="20"
+                                               Grid.Column="1"
+                                              />
 
-                <Label Text="{Binding cpf}"
-                      FontSize="20"
-                      Margin="10,0,0,0"/>
-
-              </HorizontalStackLayout>
-              <Label Text="{Binding Telefone}"
-                      FontSize="20"/>
-            </VerticalStackLayout>
-          </ViewCell>
-        </DataTemplate>
-      </ListView.ItemTemplate>
-    </ListView>
-  </VerticalStackLayout>
-  </ScrollView>
+                                        <Label Text="{Binding cpf}"
+                                               FontSize="20"
+                                               Grid.Column="2"
+                                              />
+                                    <Label Text="{Binding Telefone}"
+                                           FontSize="20"
+                                            Grid.Column="3"/>
+                                            </Grid>
+                                </VerticalStackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

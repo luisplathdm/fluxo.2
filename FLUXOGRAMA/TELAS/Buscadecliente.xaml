@@ -6,58 +6,41 @@
              Shell.NavBarIsVisible="false">
 
     <StackLayout Padding="10">
-            <Entry x:Name="PesquisarEntry" />
+        <Entry x:Name="PesquisarEntry"
+               Placeholder="Buscar por nome"
+               TextChanged="OnSearchBarTextChanged"
+               Margin="10, 10, 10, 0"/>
 
-            <ImageButton Source="lupa.png"
-                HeightRequest="100"
-                Clicked="OnSearchClicked" 
-                Background="Orange"/>
-            
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-            
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
+        <ListView x:Name="ClientesListView"
+                  HasUnevenRows="True"
+                  ItemSelected="OnProductSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout 
+                            Orientation="Horizontal" 
+                            Padding="10" 
+                            BackgroundColor="LightGray">
+                            <Label Text="{Binding Nome}"
+                                   FontSize="20"
+                                   VerticalOptions="Center"/>
+                            <Label Text="{Binding Preco}"
+                                   FontSize="20"
+                                   Margin="10,0,0,0"
+                                   VerticalOptions="Center"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
 
-
-            <Grid Grid.Row="0" Grid.Column="0">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-            </Grid>
-
-            <StackLayout 
-            Grid.Row="1" 
-            Grid.Column="0">
-                
-                <!-- Repeat for each client -->
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
-                   
-                </Grid>
-            </StackLayout>
-        </Grid>
-
-        <Button 
-            Text="Adicionar" 
-            Clicked="AdicionarClicked"
-             Background="Orange" 
-             Margin="10, 10, 10, 10"/>
-        <Button
-            Text="VOLTAR" 
-            Clicked="OnVoltarClicked"
-             Background="Orange" 
-             Margin="10, 10, 10, 10"/>
+        <Button Text="Adicionar" 
+                Clicked="AdicionarClicked"
+                BackgroundColor="Orange" 
+                Margin="10, 10, 10, 10"/>
+        <Button Text="VOLTAR" 
+                Clicked="OnVoltarClicked"
+                BackgroundColor="Orange" 
+                Margin="10, 10, 10, 10"/>
     </StackLayout>
 </ContentPage>
