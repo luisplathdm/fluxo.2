@@ -18,7 +18,7 @@ namespace Controles
         public virtual List<Cliente>? LerTodos()
         {
             var tabela = liteDB.GetCollection<Cliente>(NomeDaTabela);
-            return new List<Cliente>(tabela.FindAll().OrderBy(d => d.cpf)); // Propriedade cpf agora existe
+            return new List<Cliente>(tabela.FindAll().OrderBy(d => d.cpf)); 
         }
 
         public virtual void Apagar(int idCliente)

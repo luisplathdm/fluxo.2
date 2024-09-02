@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="fluxo._2.CadastroFornecedorPage"
+              BackgroundColor="Gainsboro"
+              Shell.NavBarIsVisible="false">
+<ScrollView>
+    <StackLayout Padding="10">
+        
+        <Label Text="Cadastro De Fornecedor" 
+        FontAttributes="Bold" 
+        FontSize="Large" 
+        HorizontalOptions="Center" />
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+                <Label Text="ID:" />
+            <Label x:Name="IdLabel"
+             Grid.Row="0" />
+                
+                <Entry x:Name="NomeFornecedorEntry"
+                 Grid.Row="1" 
+                 Margin="10, 10, 10, 10"
+                 Grid.Column="0" 
+                 Placeholder="Nome"
+                 Background="#bdb9b3"/>
+
+
+                 
+                    <Entry x:Name="TelefoneFornecedorEntry"
+                    Grid.Row="3" 
+                    Placeholder="Telefone"
+                    Background="#bdb9b3"
+                     Margin="10, 10, 10, 10"
+                    Grid.Column="0" />
+                           
+                    <Entry x:Name="EnderecoFornecedorEntry" 
+                    Grid.Row="4" 
+                    Placeholder="Endereço"
+                    Background="#bdb9b3"
+                    Margin="10, 10, 10, 10"
+                    Grid.Column="0" />         
+
+                    <Entry x:Name="CPFCNPJEntry" 
+                    Grid.Row="5" 
+                    Background="#bdb9b3"
+                    Grid.Column="0" 
+                    Margin="10, 10, 10, 10"
+                    Placeholder="CPf/CNPJ"/>
+                    
+        </Grid>
+
+        <Button 
+            Text="SALVAR" 
+            Margin="10, 10, 10, 10"
+            FontAttributes="Bold" 
+            Background="Orange"
+            Clicked="QuandoSalvarForClicked" />
+       
+        <Button 
+            Text="EXCLUIR" 
+            Margin="10, 10, 10, 10"
+            FontAttributes="Bold" 
+            Background="Orange"
+            Clicked="ApagarFornecedorClicked" />
+
+          <Button 
+            Text="CLIENTES" 
+            Margin="10, 10, 10, 10"
+            FontAttributes="Bold" 
+            Background="Orange"
+            Clicked="IrParaListagemDeClientes" />
+                                        
+        <Button 
+            Text="VOLTAR" 
+            Margin="10, 10, 10, 10"
+            Background="Orange"
+            Clicked="OnVoltarClicked" />
+    
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

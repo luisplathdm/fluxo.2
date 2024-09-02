@@ -1,15 +1,16 @@
 using System;
 using Microsoft.Maui.Controls;
 using System.Threading.Tasks;
+using Modelos;
 
 namespace fluxo._2
 {
-    public partial class CadastroPage : ContentPage
+    public partial class CadastroForncedorPage : ContentPage
     {
-        public Modelos.Cliente cliente { get; set; }
-        Controles.ClienteControle clienteControle = new Controles.ClienteControle();
+        public Modelos.Fornecedor fornecedor { get; set; }
+        Controles.FornecedorControle fornecedorControle = new Controles.FornecedorControle();
 
-        public CadastroPage()
+        public CadastroForncedorPage()
         {
             InitializeComponent();
         }
@@ -18,48 +19,46 @@ namespace fluxo._2
         {
             base.OnAppearing();
 
-            if (cliente != null)
+            if (fornecedor != null)
             {
             
-                NomeEntry.Text = cliente.Nome;
-                TelefoneEntry.Text = cliente.Telefone;
-                EnderecoEntry.Text = cliente.Endereco;
-                cpfEntry.Text = cliente.cpf; 
-                DataDeNascimentoEntry.Text = cliente.DataDeNascimento;
+                NomeFornecedorEntry.Text = fornecedor.NomeFornecedor;
+                TelefoneFornecedorEntry.Text = fornecedor.TelefoneFornecedor;
+                EnderecoFornecedorEntry.Text = fornecedor.EnderecoFornecedor;
+                CPFCNPJEntry.Text = fornecedor.CPFCNPJ;
             }
         }
 
-        private async void OnSalvarClicked(object sender, EventArgs e)
+        private async void QuandoSalvarForClicked(object sender, EventArgs e)
         {
             if (await VerificaSeDadosEstaoCorretos()) 
             {
-                var cliente = new Modelos.Cliente();
+                var fornecedor = new Modelos.Fornecedor();
                 if (!String.IsNullOrEmpty(IdLabel.Text))
-                    cliente.IdCliente = int.Parse(IdLabel.Text); 
+                    fornecedor.IdFornecedor = int.Parse(IdLabel.Text); 
                 else
-                    cliente.IdCliente = 0;
+                    fornecedor.IdFornecedor = 0;
 
-                cliente.Nome = NomeEntry.Text;
-                cliente.Endereco = EnderecoEntry.Text;
-                cliente.cpf = cpfEntry.Text; 
-                cliente.Telefone = TelefoneEntry.Text; 
-               cliente.DataDeNascimento = DataDeNascimentoEntry.Text;
+                fornecedor.CPFCNPJ = CPFCNPJEntry.Text;
+               fornecedor.EnderecoFornecedor = EnderecoFornecedorEntry.Text;
+               fornecedor.NomeFornecedor = NomeFornecedorEntry.Text; 
+               fornecedor.TelefoneFornecedor = TelefoneFornecedorEntry.Text; 
 
-                clienteControle.CriarOuAtualizar(cliente);
+                fornecedorControle.CriarOuAtualizar(fornecedor);
 
                 await DisplayAlert("Salvar", "Dados salvos com sucesso!", "OK");
             }
         }
 
-          private async void OnApagarClienteClicked(object sender, EventArgs e)
+          private async void OnApagarfornecedorClicked(object sender, EventArgs e)
   {
-    if (cliente == null || cliente.IdCliente < 1)
-      await DisplayAlert("Erro", "Nenhum cliente para excluir", "ok");
-    else if (await DisplayAlert("Excluir","Tem certeza que deseja excluir esse cliente?","Excluir Cliente","cancelar")) // Caso o usuário tocar no Botão "Excluir Cliente"
+    if (fornecedor == null || fornecedor.IdFornecedor < 1)
+      await DisplayAlert("Erro", "Nenhum fornecedor para excluir", "ok");
+    else if (await DisplayAlert("Excluir","Tem certeza que deseja excluir esse fornecedor?","Excluir fornecedor","cancelar")) // Caso o usuário tocar no Botão "Excluir Cliente"
     {
       
-      clienteControle.Apagar(cliente.IdCliente);
-      Application.Current.MainPage = new ListaClientePage(); 
+     fornecedorControle.Apagar(fornecedor.IdFornecedor);
+      Application.Current.MainPage = new ListaFornecedorPage(); 
     }
   }
 
@@ -103,9 +102,9 @@ namespace fluxo._2
             Application.Current.MainPage = new MainPage();
         }
 
-        private void IrParaListagemDeClientes(object sender, EventArgs e)
+        private void IrParaListagemDefornecedors(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new ListaClientePage();
+            Application.Current.MainPage = new ListaFornecedorPage();
         }
     }
 }

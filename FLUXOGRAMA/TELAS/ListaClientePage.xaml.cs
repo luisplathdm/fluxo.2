@@ -12,9 +12,13 @@ namespace fluxo._2
             var clientesFluxo = clienteControle.LerTodos();
             var clientesModelos = clientesFluxo.Select(c => new Modelos.Cliente
             {
+                IdCliente = c.IdCliente,
                 Nome = c.Nome,
-                Idade = c.Idade,
-                // Continue com as outras propriedades
+                cpf = c.cpf,
+                Endereco = c.Endereco,
+                Telefone = c.Telefone,
+                DataDeNascimento = c.DataDeNascimento,
+
             }).ToList();
 
             ListaClientes.ItemsSource = clientesModelos;
@@ -22,12 +26,12 @@ namespace fluxo._2
 
         void QuandoSelecionarUmItemNaLista(object sender, SelectedItemChangedEventArgs e)
         {
-            var clienteSelecionado = e.SelectedItem as Modelos.Cliente; // Referenciando Modelos.Cliente
+            var clienteSelecionado = e.SelectedItem as Modelos.Cliente; 
             if (clienteSelecionado != null)
             {
                 var page = new CadastroPage
                 {
-                    cliente = clienteSelecionado // Certifique-se de que CadastroPage usa o mesmo tipo Cliente
+                    cliente = clienteSelecionado 
                 };
 
                 Application.Current.MainPage = page;

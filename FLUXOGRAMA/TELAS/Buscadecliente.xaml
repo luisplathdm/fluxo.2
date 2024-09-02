@@ -24,7 +24,7 @@
                             <Label Text="{Binding Nome}"
                                    FontSize="20"
                                    VerticalOptions="Center"/>
-                            <Label Text="{Binding Preco}"
+                            <Label Text="{Binding IdCliente}"
                                    FontSize="20"
                                    Margin="10,0,0,0"
                                    VerticalOptions="Center"/>

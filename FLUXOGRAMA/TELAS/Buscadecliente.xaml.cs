@@ -15,12 +15,12 @@ namespace fluxo._2
         {
             InitializeComponent();
 
-            // Inicialize a lista de clientes (substitua isso pelo carregamento real dos dados)
+         
             clientes = new ObservableCollection<Cliente>
             {
-                new Cliente { Nome = "Cliente A" },
-                new Cliente { Nome = "Cliente B" }
-                // Adicione outros clientes conforme necessário
+                new Cliente { Nome = "" },
+                new Cliente { Nome = "" }
+              
             };
 
             clientesFiltrados = new ObservableCollection<Cliente>(clientes);
@@ -43,7 +43,7 @@ namespace fluxo._2
 
         private void OnSearchClicked(object sender, EventArgs e)
         {
-            // Adicione a lógica de busca aqui se necessário
+            
         }
 
         private void AdicionarClicked(object sender, EventArgs e)
@@ -61,7 +61,7 @@ namespace fluxo._2
             var clienteSelecionado = e.SelectedItem as Cliente;
             if (clienteSelecionado != null)
             {
-                // Lógica para quando um cliente for selecionado
+                
             }
         }
     }

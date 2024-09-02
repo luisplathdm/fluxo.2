@@ -58,11 +58,23 @@ build_metadata.AdditionalFiles.ManifestResourceName = fluxo._2.TELAS.Cadastro.xa
 build_metadata.AdditionalFiles.TargetPath = TELAS\Cadastro.xaml
 build_metadata.AdditionalFiles.RelativePath = TELAS\Cadastro.xaml
 
+[C:/Users/Aluno/fluxo.2/FLUXOGRAMA/TELAS/CadastroFornecedor.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = fluxo._2.TELAS.CadastroFornecedor.xaml
+build_metadata.AdditionalFiles.TargetPath = TELAS\CadastroFornecedor.xaml
+build_metadata.AdditionalFiles.RelativePath = TELAS\CadastroFornecedor.xaml
+
 [C:/Users/Aluno/fluxo.2/FLUXOGRAMA/TELAS/ListaClientePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = fluxo._2.TELAS.ListaClientePage.xaml
 build_metadata.AdditionalFiles.TargetPath = TELAS\ListaClientePage.xaml
 build_metadata.AdditionalFiles.RelativePath = TELAS\ListaClientePage.xaml
+
+[C:/Users/Aluno/fluxo.2/FLUXOGRAMA/TELAS/ListaFornecedorPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = fluxo._2.TELAS.ListaFornecedorPage.xaml
+build_metadata.AdditionalFiles.TargetPath = TELAS\ListaFornecedorPage.xaml
+build_metadata.AdditionalFiles.RelativePath = TELAS\ListaFornecedorPage.xaml
 
 [C:/Users/Aluno/fluxo.2/FLUXOGRAMA/TELAS/Produtocadastropage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
