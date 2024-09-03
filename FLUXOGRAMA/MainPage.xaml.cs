@@ -20,7 +20,7 @@ public partial class MainPage : ContentPage
 
         private void OnFornecedorClicked(object sender, EventArgs e)
         {
-			Application.Current.MainPage = new BuscaDeCliente();              }
+			Application.Current.MainPage = new CadastroFornecedorPage();              }
 
         private void OnBuscaClicked(object sender, EventArgs e)
         {

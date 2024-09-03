@@ -14,3 +14,4 @@ public class Fornecedor: Registro
     public string CPFCNPJ  { get; set; }
 
 }
+

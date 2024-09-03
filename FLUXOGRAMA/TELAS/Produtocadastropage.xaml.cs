@@ -10,12 +10,12 @@ namespace fluxo._2
             InitializeComponent();
         }
 
-        private void OnSalvarClicked(object sender, EventArgs e)
+        private void SalvandoClicked(object sender, EventArgs e)
         {
            
         }
 
-        private void OnVoltarClicked(object sender, EventArgs e)
+        private void VoltandoClicked(object sender, EventArgs e)
         {
             
         }

@@ -95,12 +95,12 @@
          <Button Text="SALVAR"
             FontAttributes="Bold" 
              Background="Orange"
-            Clicked="OnSalvarClicked" 
+            Clicked="SalvandoClicked" 
             HorizontalOptions="Fill" />
        
          <Button Text="VOLTAR" 
           Background="Orange"
-            Clicked="OnVoltarClicked"
+            Clicked="VoltandoClicked"
              HorizontalOptions="Fill" />
     
     </StackLayout>

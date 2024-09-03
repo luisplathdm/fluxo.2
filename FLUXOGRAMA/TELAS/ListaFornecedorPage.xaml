@@ -19,9 +19,9 @@
                     Margin="10, 10, 10, 0"
                     FontSize="16"
                     TextColor="Black"
-                    Clicked="VoltandoTudoAoInicio"/>
+                    Clicked="VoltandoTudoNoInicio"/>
     
-            <ListView x:Name="ListaFornecedores"
+            <ListView x:Name="ListaFornecedor"
                       HasUnevenRows="True"
                       ItemSelected="QuandoSelecionarUmItemNaLista"
                       HorizontalOptions="Fill"
@@ -48,16 +48,16 @@
                                                FontSize="20"
                                                Grid.Column="0"/>
 
-                                        <Label Text="{Binding Nome}"
+                                        <Label Text="{Binding NomeFornecedor}"
                                                FontSize="20"
                                                Grid.Column="1"
                                               />
 
-                                        <Label Text="{Binding cpf}"
+                                        <Label Text="{Binding CPFCNPJ}"
                                                FontSize="20"
                                                Grid.Column="2"
                                               />
-                                    <Label Text="{Binding Telefone}"
+                                    <Label Text="{Binding TelefoneFornecedor}"
                                            FontSize="20"
                                             Grid.Column="3"/>
                                             </Grid>

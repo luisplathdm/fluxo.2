@@ -6,28 +6,29 @@ namespace Controles
     {
         public FornecedorControle() : base()
         {
-            NomeDaTabela = "Fornecedor";
+            NomeDaTabela = "Fornecedores";
         }
 
         public virtual Fornecedor? Ler(int idFornecedor)
         {
             var collection = liteDB.GetCollection<Fornecedor>(NomeDaTabela);
-            return collection.FindOne(d => d.IdFornecedor == IdFornecedor);
+            return collection.FindOne(f => f.IdFornecedor == idFornecedor);
         }
 
-        public virtual List<Fornecedor>? LerTodos()
+        public virtual List<Fornecedor>? LerTodosagora()
         {
             var tabela = liteDB.GetCollection<Fornecedor>(NomeDaTabela);
-            return new List<Fornecedor>(tabela.FindAll().OrderBy(d => d.cpf)); 
+            return new List<Fornecedor>(tabela.FindAll().OrderBy(f => f.CPFCNPJ).ToList()); 
+            
         }
 
         public virtual void Apagar(int idFornecedor)
         {
             var collection = liteDB.GetCollection<Fornecedor>(NomeDaTabela);
-            collection.Delete(IdFornecedor);
+            collection.Delete(idFornecedor);
         }
 
-        public virtual void CriarOuAtualizar(Fornecedor fornecedor)
+        public virtual void CriarOuAtualizarFornecedor(Fornecedor fornecedor)
         {
             var collection = liteDB.GetCollection<Fornecedor>(NomeDaTabela);
             collection.Upsert(fornecedor);

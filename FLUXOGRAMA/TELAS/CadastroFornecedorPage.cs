@@ -5,12 +5,12 @@ using Modelos;
 
 namespace fluxo._2
 {
-    public partial class CadastroForncedorPage : ContentPage
+    public partial class CadastroFornecedorPage : ContentPage
     {
         public Modelos.Fornecedor fornecedor { get; set; }
         Controles.FornecedorControle fornecedorControle = new Controles.FornecedorControle();
 
-        public CadastroForncedorPage()
+        public CadastroFornecedorPage()
         {
             InitializeComponent();
         }
@@ -34,8 +34,8 @@ namespace fluxo._2
             if (await VerificaSeDadosEstaoCorretos()) 
             {
                 var fornecedor = new Modelos.Fornecedor();
-                if (!String.IsNullOrEmpty(IdLabel.Text))
-                    fornecedor.IdFornecedor = int.Parse(IdLabel.Text); 
+                if (!String.IsNullOrEmpty(IdLabelFornecedor.Text))
+                    fornecedor.IdFornecedor = int.Parse(IdLabelFornecedor.Text); 
                 else
                     fornecedor.IdFornecedor = 0;
 
@@ -44,13 +44,13 @@ namespace fluxo._2
                fornecedor.NomeFornecedor = NomeFornecedorEntry.Text; 
                fornecedor.TelefoneFornecedor = TelefoneFornecedorEntry.Text; 
 
-                fornecedorControle.CriarOuAtualizar(fornecedor);
+                fornecedorControle.CriarOuAtualizarFornecedor(fornecedor);
 
                 await DisplayAlert("Salvar", "Dados salvos com sucesso!", "OK");
             }
         }
 
-          private async void OnApagarfornecedorClicked(object sender, EventArgs e)
+          private async void ApagarFornecedorClicked (object sender, EventArgs e)
   {
     if (fornecedor == null || fornecedor.IdFornecedor < 1)
       await DisplayAlert("Erro", "Nenhum fornecedor para excluir", "ok");
@@ -65,30 +65,25 @@ namespace fluxo._2
         private async Task<bool> VerificaSeDadosEstaoCorretos()
         {
            
-            if (String.IsNullOrEmpty(NomeEntry.Text))
+            if (String.IsNullOrEmpty(NomeFornecedorEntry.Text))
             {
                 await DisplayAlert("Cadastrar", "O campo Nome é obrigatório", "OK");
                 return false;
             }
            
-            else if (String.IsNullOrEmpty(DataDeNascimentoEntry.Text))
-            {
-                await DisplayAlert("Cadastrar", "O campo Data De Nascimento é obrigatório", "OK");
-                return false;
-            }
            
-            else if (String.IsNullOrEmpty(TelefoneEntry.Text))
+            else if (String.IsNullOrEmpty(TelefoneFornecedorEntry.Text))
             {
                 await DisplayAlert("Cadastrar", "O campo Telefone é obrigatório", "OK");
                 return false;
             }
             
-            else if (String.IsNullOrEmpty(EnderecoEntry.Text))
+            else if (String.IsNullOrEmpty(EnderecoFornecedorEntry.Text))
             {
                 await DisplayAlert("Cadastrar", "O campo Endereço é obrigatório", "OK");
                 return false;
             }
-             else if (String.IsNullOrEmpty(cpfEntry.Text))
+             else if (String.IsNullOrEmpty(CPFCNPJEntry.Text))
             {
                 await DisplayAlert("Cadastrar", "O campo CPF é obrigatório", "OK");
                 return false;
@@ -97,12 +92,12 @@ namespace fluxo._2
                 return true;
         }
 
-        private void OnVoltarClicked(object sender, EventArgs e)
+        private void VoltarClicked(object sender, EventArgs e)
         {
             Application.Current.MainPage = new MainPage();
         }
 
-        private void IrParaListagemDefornecedors(object sender, EventArgs e)
+        private void IrParaListagemDefornecedores(object sender, EventArgs e)
         {
             Application.Current.MainPage = new ListaFornecedorPage();
         }

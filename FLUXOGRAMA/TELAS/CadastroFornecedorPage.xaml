@@ -26,7 +26,7 @@
             </Grid.ColumnDefinitions>
 
                 <Label Text="ID:" />
-            <Label x:Name="IdLabel"
+            <Label x:Name="IdLabelFornecedor"
              Grid.Row="0" />
                 
                 <Entry x:Name="NomeFornecedorEntry"
@@ -39,21 +39,21 @@
 
                  
                     <Entry x:Name="TelefoneFornecedorEntry"
-                    Grid.Row="3" 
+                    Grid.Row="2" 
                     Placeholder="Telefone"
                     Background="#bdb9b3"
                      Margin="10, 10, 10, 10"
                     Grid.Column="0" />
                            
                     <Entry x:Name="EnderecoFornecedorEntry" 
-                    Grid.Row="4" 
+                    Grid.Row="3" 
                     Placeholder="Endereço"
                     Background="#bdb9b3"
                     Margin="10, 10, 10, 10"
                     Grid.Column="0" />         
 
                     <Entry x:Name="CPFCNPJEntry" 
-                    Grid.Row="5" 
+                    Grid.Row="4" 
                     Background="#bdb9b3"
                     Grid.Column="0" 
                     Margin="10, 10, 10, 10"
@@ -76,17 +76,17 @@
             Clicked="ApagarFornecedorClicked" />
 
           <Button 
-            Text="CLIENTES" 
+            Text="FORNECEDOR" 
             Margin="10, 10, 10, 10"
             FontAttributes="Bold" 
             Background="Orange"
-            Clicked="IrParaListagemDeClientes" />
+            Clicked="IrParaListagemDefornecedores" />
                                         
         <Button 
             Text="VOLTAR" 
             Margin="10, 10, 10, 10"
             Background="Orange"
-            Clicked="OnVoltarClicked" />
+            Clicked="VoltarClicked" />
     
     </StackLayout>
   </ScrollView>
