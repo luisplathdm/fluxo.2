@@ -9,22 +9,10 @@ namespace fluxo._2
     public partial class BuscaDeCliente : ContentPage
     {
         private ObservableCollection<Cliente> clientes;
-        private ObservableCollection<Cliente> clientesFiltrados;
 
         public BuscaDeCliente()
         {
             InitializeComponent();
-
-         
-            clientes = new ObservableCollection<Cliente>
-            {
-                new Cliente { Nome = "" },
-                new Cliente { Nome = "" }
-              
-            };
-
-            clientesFiltrados = new ObservableCollection<Cliente>(clientes);
-            ClientesListView.ItemsSource = clientesFiltrados;
         }
 
         private void OnSearchBarTextChanged(object sender, TextChangedEventArgs e)

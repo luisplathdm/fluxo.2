@@ -32,8 +32,8 @@
               
             <Picker x:Name="pickerEstado"
                     ItemDisplayBinding="{Binding Nome}"
-                     Grid.Row="1"
-                     Margin="10, 10, 10, 10"/>
+                    Grid.Row="1"
+                    Margin="10, 10, 10, 10"/>
                 
                 <Entry x:Name="NomeEntry"
                  Grid.Row="2" 

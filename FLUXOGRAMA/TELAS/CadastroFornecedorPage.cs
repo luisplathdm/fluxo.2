@@ -2,6 +2,7 @@ using System;
 using Microsoft.Maui.Controls;
 using System.Threading.Tasks;
 using Modelos;
+using Controles;
 
 namespace fluxo._2
 {
@@ -13,6 +14,14 @@ namespace fluxo._2
         public CadastroFornecedorPage()
         {
             InitializeComponent();
+           //  var fornecedores = fornecedorControle.LerTodos();
+          //  var fornecedoresModelos = fornecedores.Select(f => new Modelos.Fornecedor
+           // {
+           //     id = f.id,
+            //    Nome = f.Nome,
+         
+
+         //   }).ToList();
         }
 
         protected override void OnAppearing()
@@ -29,7 +38,7 @@ namespace fluxo._2
             }
         }
 
-        private async void QuandoSalvarForClicked(object sender, EventArgs e)
+        private async void OnSalvarClicked(object sender, EventArgs e)
         {
             if (await VerificaSeDadosEstaoCorretos()) 
             {

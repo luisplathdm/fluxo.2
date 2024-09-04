@@ -9,6 +9,7 @@ namespace fluxo._2
         public ListaFornecedorPage()
         {
             InitializeComponent();
+            
             ListaFornecedor.ItemsSource = fornecedorControle.LerTodos();
         }
 
@@ -18,7 +19,7 @@ namespace fluxo._2
    
            page.fornecedor = e.SelectedItem as Fornecedor;
     
-            Application.Current.MainPage = page;
+           Application.Current.MainPage = page;
   
             
         }

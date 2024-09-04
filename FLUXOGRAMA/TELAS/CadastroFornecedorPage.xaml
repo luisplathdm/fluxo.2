@@ -67,7 +67,7 @@
             Margin="10, 10, 10, 10"
             FontAttributes="Bold" 
             Background="Orange"
-            Clicked="QuandoSalvarForClicked" />
+            Clicked="OnSalvarClicked"/>
        
         <Button 
             Text="EXCLUIR" 

@@ -14,13 +14,17 @@ namespace fluxo._2
         public CadastroPage()
         {
             InitializeComponent();
-              
+               pickerEstado.ItemsSource = estadoControle.LerTodos();
                var estadosDoBanco = estadoControle.LerTodos();
+
+    
+                estadosDoBanco.Add(new Modelos.Estado { id = 4, Nome = "Baiti" });
+                estadosDoBanco.Add(new Modelos.Estado { id = 5, Nome = "Apucarana(obvio)" });
+                estadosDoBanco.Add(new Modelos.Estado { id = 6, Nome = "Compadre washgthon" });
+                estadosDoBanco.Add(new Modelos.Estado { id = 7, Nome = "Arapongãs" });
+                estadosDoBanco.Add(new Modelos.Estado { id = 8, Nome = "Não sei onde eu moro" });
+                
                 pickerEstado.ItemsSource = estadosDoBanco;
-   
-                new Modelos.Estado { id = 1, Nome = "Abatiá" };
-                new Modelos.Estado { id = 2, Nome = "Adrianópolis" };
-                new Modelos.Estado { id = 3, Nome = "Agudos do Sul" };
 
         }
 
