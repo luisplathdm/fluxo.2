@@ -20,6 +20,7 @@
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
@@ -28,9 +29,14 @@
                 <Label Text="ID:" />
             <Label x:Name="IdLabel"
              Grid.Row="0" />
+              
+            <Picker x:Name="pickerEstado"
+                    ItemDisplayBinding="{Binding Nome}"
+                     Grid.Row="1"
+                     Margin="10, 10, 10, 10"/>
                 
                 <Entry x:Name="NomeEntry"
-                 Grid.Row="1" 
+                 Grid.Row="2" 
                  Margin="10, 10, 10, 10"
                  Grid.Column="0" 
                  Placeholder="Nome"
@@ -39,7 +45,7 @@
           
                     <Entry x:Name="DataDeNascimentoEntry"
                     Placeholder="Data De Nascimento"
-                    Grid.Row="2" 
+                    Grid.Row="3" 
                     Background="#bdb9b3"
                      Margin="10, 10, 10, 10"
                     Grid.Column="0" />
@@ -47,21 +53,21 @@
 
                  
                     <Entry x:Name="TelefoneEntry"
-                    Grid.Row="3" 
+                    Grid.Row="4" 
                     Placeholder="Telefone"
                     Background="#bdb9b3"
                      Margin="10, 10, 10, 10"
                     Grid.Column="0" />
                            
                     <Entry x:Name="EnderecoEntry" 
-                    Grid.Row="4" 
+                    Grid.Row="5" 
                     Placeholder="Endereço"
                     Background="#bdb9b3"
                     Margin="10, 10, 10, 10"
                     Grid.Column="0" />         
 
                     <Entry x:Name="cpfEntry" 
-                    Grid.Row="5" 
+                    Grid.Row="6" 
                     Background="#bdb9b3"
                     Grid.Column="0" 
                     Margin="10, 10, 10, 10"

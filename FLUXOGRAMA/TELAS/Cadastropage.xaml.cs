@@ -8,10 +8,20 @@ namespace fluxo._2
     {
         public Modelos.Cliente cliente { get; set; }
         Controles.ClienteControle clienteControle = new Controles.ClienteControle();
+        Controles.EstadoControle estadoControle = new Controles.EstadoControle();
+
 
         public CadastroPage()
         {
             InitializeComponent();
+              
+               var estadosDoBanco = estadoControle.LerTodos();
+                pickerEstado.ItemsSource = estadosDoBanco;
+   
+                new Modelos.Estado { id = 1, Nome = "Abatiá" };
+                new Modelos.Estado { id = 2, Nome = "Adrianópolis" };
+                new Modelos.Estado { id = 3, Nome = "Agudos do Sul" };
+
         }
 
         protected override void OnAppearing()
@@ -20,12 +30,12 @@ namespace fluxo._2
 
             if (cliente != null)
             {
-            
                 NomeEntry.Text = cliente.Nome;
                 TelefoneEntry.Text = cliente.Telefone;
                 EnderecoEntry.Text = cliente.Endereco;
                 cpfEntry.Text = cliente.cpf; 
                 DataDeNascimentoEntry.Text = cliente.DataDeNascimento;
+                pickerEstado.SelectedItem = cliente.Estado;
             }
         }
 

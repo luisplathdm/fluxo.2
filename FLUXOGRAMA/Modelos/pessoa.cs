@@ -2,7 +2,6 @@ using System.Data;
 using LiteDB;
 namespace Modelos;
  
- //CLASSE PAI//
 
  public class Pessoa
 {

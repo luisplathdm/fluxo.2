@@ -18,6 +18,7 @@ namespace fluxo._2
                 Endereco = c.Endereco,
                 Telefone = c.Telefone,
                 DataDeNascimento = c.DataDeNascimento,
+                Estado = c.Estado,
 
             }).ToList();
 
@@ -32,6 +33,8 @@ namespace fluxo._2
                 var page = new CadastroPage
                 {
                     cliente = clienteSelecionado 
+                      
+
                 };
 
                 Application.Current.MainPage = page;

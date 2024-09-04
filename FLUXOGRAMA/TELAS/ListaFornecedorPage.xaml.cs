@@ -14,17 +14,13 @@ namespace fluxo._2
 
         void QuandoSelecionarUmItemNaLista(object sender, SelectedItemChangedEventArgs e)
         {
-            var fornecedorSelecionado = e.SelectedItem as Modelos.Fornecedor; 
-            if (fornecedorSelecionado != null)
-            {
-                var page = new CadastroFornecedorPage
-                page.cliente = e.SelectedItem as Cliente;
-                {
-                    fornecedor = fornecedorSelecionado 
-                };
-
-                Application.Current.MainPage = page;
-            }
+           var page = new CadastroFornecedorPage();
+   
+           page.fornecedor = e.SelectedItem as Fornecedor;
+    
+            Application.Current.MainPage = page;
+  
+            
         }
 
         void NovoFornecedorClicked(object sender, EventArgs e)
@@ -37,4 +33,5 @@ namespace fluxo._2
             Application.Current.MainPage = new MainPage();
         }
     }
-}
+}   
+
